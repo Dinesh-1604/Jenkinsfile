@@ -14,6 +14,7 @@ pipeline {
         stage ('compile') {
           steps {
              echo "compile the application...."
+          }
         }
        stage ('deploy') {
           steps {
