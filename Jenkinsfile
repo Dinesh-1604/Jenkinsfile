@@ -3,7 +3,12 @@ pipeline {
     stages {
        stage ('Build') {
           steps {
-             sh 'cp index.html /var/www/html/'
+             sh """
+              cp simple.java /var/www/html/
+              javac /var/www/html/simple.java
+              cd /var/www/html
+              java simple
+              """
           }
        }
        stage ('Test') {
