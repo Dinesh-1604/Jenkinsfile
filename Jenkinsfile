@@ -7,7 +7,7 @@ pipeline {
               cp simple.java /var/www/html/
               javac /var/www/html/simple.java
               cd /var/www/html
-              java simple
+              simple.java
               """
           }
        }
