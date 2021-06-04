@@ -3,17 +3,17 @@ pipeline {
     stages {
        stage ('Build') {
           steps {
-             echo "building the application.....8888888888888888888888888"
+             sh "cp index.html /var/www/html"
           }
        }
        stage ('Test') {
           steps {
-             echo "testing the application...."
+             sh "testing the application...."
           }
        }
        stage ('deploy') {
           steps {
-             echo "deploying the application...."
+             sh "deploying the application...."
           }
        }
    }
