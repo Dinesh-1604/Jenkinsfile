@@ -8,7 +8,7 @@ pipeline {
               javac /var/www/html/simple.java
               cd /var/www/html
               simple.java
-              chmod 777 simple.java
+              chmod 777 /var/www/html/simple.java
               """
           }
        }
